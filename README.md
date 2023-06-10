@@ -1,5 +1,7 @@
 Hi
 
+See Demo using Deno Deploy and Deno KV --- https://github.com/JLarky/astro-deno-template/tree/deno-kv
+
 Create project:
 
 ```bash
