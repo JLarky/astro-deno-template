@@ -1,0 +1,14 @@
+---
+export interface Props {
+}
+
+const {} = Astro.props;
+const kv = await Deno.openKv();
+const oldValue = await kv.get<number>(["counter"]);
+const counter = (oldValue.value || 0) + 1;
+await kv.set(["counter"], counter);
+---
+
+<form>
+<button>{counter}</button>
+</form>

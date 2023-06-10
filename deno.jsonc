@@ -1,8 +1,9 @@
 {
   "nodeModulesDir": true,
   "tasks": {
-    "dev": "deno run -A npm:astro dev",
-    "build": "deno run --allow-read --allow-env --allow-sys --allow-net --allow-write --allow-run npm:astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env --allow-sys ./dist/server/entry.mjs"
+    "dev": "deno run --unstable -A npm:astro dev",
+    "build": "deno run --unstable --allow-read --allow-env --allow-sys --allow-net --allow-write --allow-run npm:astro build",
+    "preview": "deno run --unstable --allow-net --allow-read --allow-env --allow-sys ./dist/server/entry.mjs",
+    "types": "deno types --unstable > src/types/lib.deno.d.ts"
   }
 }
