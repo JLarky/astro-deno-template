@@ -4,6 +4,7 @@
     "dev": "deno run --unstable -A npm:astro dev",
     "build": "deno run --unstable --allow-read --allow-env --allow-sys --allow-net --allow-write --allow-run npm:astro build",
     "preview": "deno run --unstable --allow-net --allow-read --allow-env --allow-sys ./dist/server/entry.mjs",
+    "deploy": "(cd dist/; deployctl deploy --prod --project=astro-in-deno server/entry.mjs)",
     "types": "deno types --unstable > src/types/lib.deno.d.ts"
   }
 }
