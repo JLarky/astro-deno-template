@@ -2,6 +2,8 @@ Hi
 
 See Demo using Deno Deploy and Deno KV --- https://github.com/JLarky/astro-deno-template/tree/deno-kv
 
+## Requires Deno 1.35
+
 Create project:
 
 ```bash
@@ -10,14 +12,11 @@ deno run -A npm:create-astro --template JLarky/astro-deno-template --git --no-in
 cd astro-deno
 ```
 
-Patch undici:
+Dev:
 
 ```bash
-deno task build
-# you will see an error
-patch node_modules/.deno/undici@5.22.1/node_modules/undici/lib/fetch/index.js undici_5.22.1.patch
-# and try again
-deno task build
+deno task dev
+# open http://localhost:3000
 ```
 
 Build & preview:
@@ -28,9 +27,12 @@ deno task preview
 # open http://localhost:8085
 ```
 
-Dev:
+Blog:
 
-```bash
-deno task dev
-# open http://localhost:3000
-```
+https://deno.com/blog/v1.35
+
+Deploy to Deno Deploy:
+
+WIP
+
+See https://github.com/JLarky/astro-lucia-deno-kv for a working example
