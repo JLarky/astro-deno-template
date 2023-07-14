@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from "npm:astro/config";
 import deno from "npm:@astrojs/deno";
 
 // https://astro.build/config

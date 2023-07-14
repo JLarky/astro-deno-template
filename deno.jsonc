@@ -1,4 +1,5 @@
 {
+  "nodeModulesDir": true,
   "tasks": {
     "dev": "deno run -A npm:astro dev",
     "build": "deno run --allow-read --allow-env --allow-sys --allow-net --allow-write --allow-run npm:astro build",
