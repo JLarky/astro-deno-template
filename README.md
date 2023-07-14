@@ -47,7 +47,7 @@ cd astro-deno
 
 For the most part, this is going to be the same as the regular template, but here are the differences:
 
-- you get `deno.jsonc` file with tasks for dev, build and preview so that you don't have to look at that warning anymore `Warning Currently only basic package.json `scripts`are supported. Programs like`rimraf`or`cross-env` will not work correctly. This will be fixed in an upcoming release.`
+- you get `deno.jsonc` file with tasks for dev, build and preview so that you don't have to look at that warning anymore `Warning Currently only basic package.json scripts are supported. Programs like rimraf or cross-env will not work correctly. This will be fixed in an upcoming release.`
 - deno-deploy adapter is already configured in `astro.config.mjs`
 
 Dev:
